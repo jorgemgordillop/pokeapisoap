@@ -8,13 +8,12 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.annotation.processing.Generated;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @Entity
-public class PokemonEntity {
+public class PokeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

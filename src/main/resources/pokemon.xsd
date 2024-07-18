@@ -1,0 +1,26 @@
+<!-- src/main/resources/pokemon.xsd -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://example.com/pokemon" targetNamespace="http://example.com/pokemon" elementFormDefault="qualified">
+    <xs:element name="getPokemonRequest" type="tns:GetPokemonRequest"/>
+    <xs:element name="getPokemonResponse" type="tns:GetPokemonResponse"/>
+
+    <xs:complexType name="GetPokemonRequest">
+        <xs:sequence>
+            <xs:element name="nameOrId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GetPokemonResponse">
+        <xs:sequence>
+            <xs:element name="pokemon" type="tns:Pokemon"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Pokemon">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="abilities" type="xs:string"/>
+            <xs:element name="imageUrl" type="xs:string"/>
+            <xs:element name="queryDate" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
