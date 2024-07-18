@@ -36,7 +36,6 @@ mvn clean spring-boot:run
 El WSDL del servicio SOAP está disponible en la siguiente URL:
 
 ```bash
-Copiar código
 http://localhost:8080/ws/pokemons.wsdl
 ```
 Puedes exportarlo a algún software como soapui para probar los servicios.
