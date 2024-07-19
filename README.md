@@ -24,7 +24,7 @@ Este proyecto es una aplicación Spring Boot que consume la PokeAPI para obtener
 ### 1. Clonar el repositorio
 
 ```bash 
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/jorgemgordillop/pokeapisoap
 cd pokeapi
 ```
 
